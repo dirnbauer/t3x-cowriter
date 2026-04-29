@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M12 14h31a7 7 0 0 1 7 7v13a7 7 0 0 1-7 7H29L17 52V41h-5a7 7 0 0 1-7-7V21a7 7 0 0 1 7-7Z"/>
-  <path fill="currentColor" d="M18 25h20v5H18zm0 10h13v5H18z"/>
-  <path fill="var(--icon-color-accent, #ff8700)" d="M45 9c1.2 5.8 4.2 8.8 10 10-5.8 1.2-8.8 4.2-10 10-1.2-5.8-4.2-8.8-10-10 5.8-1.2 8.8-4.2 10-10Z"/>
-  <path fill="var(--icon-color-accent, #ff8700)" d="m40 45 10-10 5 5-10 10-7 2 2-7Z"/>
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14 16h30a5 5 0 0 1 5 5v13a5 5 0 0 1-5 5H30L18 49V39h-4a5 5 0 0 1-5-5V21a5 5 0 0 1 5-5Z"/>
+  <path fill="currentColor" d="M19 26h17v4H19zm0 8h12v4H19z"/>
+  <path fill="var(--icon-color-accent, #ff8700)" d="M45 10c1.1 5 3.9 7.8 9 9-5.1 1.2-7.9 4-9 9-1.2-5-3.9-7.8-9-9 5.1-1.2 7.9-4 9-9Z"/>
+  <path fill="var(--icon-color-accent, #ff8700)" d="m41 45 9-9 4 4-9 9-6 2z"/>
 </svg>

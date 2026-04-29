@@ -18,4 +18,19 @@ final readonly class DiagnosticCheck
         public Severity $severity,
         public ?string $fixRoute = null,
     ) {}
+
+    public function getTitle(): string
+    {
+        return match ($this->key) {
+            'provider_exists' => 'LLM provider configured',
+            'provider_active' => 'LLM provider active',
+            'provider_has_api_key' => 'Provider API key configured',
+            'model_exists' => 'LLM model configured',
+            'model_active' => 'LLM model active',
+            'configuration_exists' => 'LLM configuration created',
+            'configuration_active' => 'LLM configuration active',
+            'configuration_default' => 'Default LLM configuration selected',
+            default => ucfirst(str_replace('_', ' ', $this->key)),
+        };
+    }
 }

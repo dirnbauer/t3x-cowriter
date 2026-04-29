@@ -78,7 +78,9 @@ final class DiagnosticServiceTest extends TestCase
         }
 
         self::assertSame('1 provider(s) configured.', $result->checks[0]->message);
+        self::assertSame('LLM provider configured', $result->checks[0]->getTitle());
         self::assertSame('Default configuration: "Default".', $result->checks[7]->message);
+        self::assertSame('Default LLM configuration selected', $result->checks[7]->getTitle());
     }
 
     #[Test]

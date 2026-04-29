@@ -10,10 +10,9 @@
 [![SLSA 3](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev)
 
 <!-- Standards -->
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%2010-brightgreen.svg)](https://phpstan.org/)
+[![PHPStan](https://img.shields.io/badge/PHPStan-level%20max-brightgreen.svg)](https://phpstan.org/)
 [![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-blue.svg)](https://www.php.net/)
-[![TYPO3 v13](https://img.shields.io/badge/TYPO3-v13-orange.svg)](https://typo3.org/)
-[![TYPO3 v14](https://img.shields.io/badge/TYPO3-v14-orange.svg)](https://typo3.org/)
+[![TYPO3 v14.3 LTS](https://img.shields.io/badge/TYPO3-v14.3%20LTS-orange.svg)](https://typo3.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL_v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Latest Release](https://img.shields.io/github/v/release/netresearch/t3x-cowriter)](https://github.com/netresearch/t3x-cowriter/releases)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
@@ -49,8 +48,10 @@ AI-powered content assistant for TYPO3 CKEditor - write better content with help
 ## Requirements
 
 - PHP 8.2+
-- TYPO3 v13 or v14
-- [netresearch/nr-llm](https://github.com/netresearch/t3x-nr-llm) extension (LLM provider abstraction)
+- TYPO3 v14.3 LTS only
+- [netresearch/nr-llm](https://github.com/netresearch/t3x-nr-llm) `^0.7` (LLM provider abstraction)
+- XLIFF 2.0 language files with German and English backend translations
+- Static analysis uses the TYPO3 PHPStan setup at `level: max`
 
 ## Installation
 
@@ -175,7 +176,7 @@ make test-e2e            # End-to-end tests
 
 # Code quality
 make lint               # PHP-CS-Fixer
-make phpstan            # PHPStan level 10
+make phpstan            # PHPStan level max
 ```
 
 ### Test Coverage
@@ -197,7 +198,7 @@ open var/coverage/unit/index.html
 
 ## Migration to v3.x
 
-Version 3.0 requires TYPO3 v13.4+ and PHP 8.2+. It removes the frontend-only architecture
+The TYPO3 14 line requires TYPO3 14.3 LTS and PHP 8.2+. It uses the shared nr-llm architecture
 and uses the nr-llm extension for provider-agnostic LLM access. API keys are no longer stored
 in extension settings.
 

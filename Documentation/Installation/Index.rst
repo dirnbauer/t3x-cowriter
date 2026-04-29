@@ -8,6 +8,9 @@ Installation
 
 The extension is installed via Composer only.
 
+The current branch intentionally targets TYPO3 14 only. TYPO3 13 compatibility
+code has been removed, and backend translations use XLIFF 2.0.
+
 ..  note::
 
     This extension requires the :ref:`nr-llm extension <nrllm:start>`
@@ -36,15 +39,13 @@ Version matrix
 ==============  ==============  ================
 Extension       TYPO3           PHP
 ==============  ==============  ================
-3.x             13.4 - 14       8.2 - 8.5
-2.x             12.4            8.2 - 8.4
-1.x             11.5            7.4 - 8.1
+current         14.3 LTS        8.2 - 8.5
 ==============  ==============  ================
 
 Migration to 3.x
 =================
 
-Version 3.0.0 introduces significant architectural changes:
+The TYPO3 14 line uses the shared nr-llm architecture:
 
 1.  **Install nr-llm extension**: The LLM provider abstraction is now handled
     by the separate :ref:`nr-llm extension <nrllm:start>`.

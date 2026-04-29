@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <path fill="currentColor" d="M14 12h28a8 8 0 0 1 8 8v13a8 8 0 0 1-8 8H28L16 52V41h-2a8 8 0 0 1-8-8V20a8 8 0 0 1 8-8Zm8 32h24v6H22v-6Z"/>
-  <path fill="var(--icon-color-accent, #ff8700)" d="M44 8c1.2 5.8 4.2 8.8 10 10-5.8 1.2-8.8 4.2-10 10-1.2-5.8-4.2-8.8-10-10 5.8-1.2 8.8-4.2 10-10Z"/>
-  <path fill="var(--icon-color-accent, #ff8700)" opacity=".7" d="M18 25h20v5H18z"/>
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M12 14h31a7 7 0 0 1 7 7v13a7 7 0 0 1-7 7H29L17 52V41h-5a7 7 0 0 1-7-7V21a7 7 0 0 1 7-7Z"/>
+  <path fill="currentColor" d="M18 25h20v5H18zm0 10h13v5H18z"/>
+  <path fill="var(--icon-color-accent, #ff8700)" d="M45 9c1.2 5.8 4.2 8.8 10 10-5.8 1.2-8.8 4.2-10 10-1.2-5.8-4.2-8.8-10-10 5.8-1.2 8.8-4.2 10-10Z"/>
+  <path fill="var(--icon-color-accent, #ff8700)" d="m40 45 10-10 5 5-10 10-7 2 2-7Z"/>
 </svg>

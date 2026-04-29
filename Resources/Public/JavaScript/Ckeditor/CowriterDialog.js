@@ -497,7 +497,7 @@ export class CowriterDialog {
 
         const addRefBtn = document.createElement('button');
         addRefBtn.type = 'button';
-        addRefBtn.className = 'btn btn-sm btn-outline-secondary mt-1';
+        addRefBtn.className = 'btn btn-default mt-2';
         addRefBtn.dataset.role = 'add-reference';
         addRefBtn.innerHTML = '<typo3-backend-icon identifier="actions-plus" size="small"></typo3-backend-icon> Add reference page';
         addRefBtn.addEventListener('click', () => {
@@ -737,7 +737,7 @@ export class CowriterDialog {
 
         const removeBtn = document.createElement('button');
         removeBtn.type = 'button';
-        removeBtn.className = 'btn btn-sm btn-outline-danger';
+        removeBtn.className = 'btn btn-danger';
         removeBtn.dataset.role = 'remove-reference';
         removeBtn.innerHTML = '<typo3-backend-icon identifier="actions-delete" size="small"></typo3-backend-icon>';
         removeBtn.setAttribute('aria-label', 'Remove reference page');
@@ -767,7 +767,7 @@ export class CowriterDialog {
         if (!pages || pages.length === 0) {
             dropdown.setAttribute('role', 'listbox');
             const item = document.createElement('div');
-            item.className = 'list-group-item list-group-item-light text-muted small';
+            item.className = 'list-group-item text-body-secondary';
             item.textContent = 'No pages found';
             item.setAttribute('role', 'status');
             dropdown.appendChild(item);
@@ -791,7 +791,7 @@ export class CowriterDialog {
             item.textContent = `[${page.uid}] ${page.title}`;
             if (page.slug) {
                 const slug = document.createElement('span');
-                slug.className = 'text-muted ms-1';
+                slug.className = 'text-body-secondary ms-1';
                 slug.textContent = page.slug;
                 item.appendChild(slug);
             }
@@ -1020,7 +1020,7 @@ export class CowriterDialog {
         // Copy button inside the details
         const copyBtn = document.createElement('button');
         copyBtn.type = 'button';
-        copyBtn.className = 'btn btn-sm btn-outline-secondary mt-1';
+        copyBtn.className = 'btn btn-default mt-2';
         copyBtn.dataset.role = 'debug-copy';
         copyBtn.textContent = 'Copy to clipboard';
         copyBtn.addEventListener('click', () => {

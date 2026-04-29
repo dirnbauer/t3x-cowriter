@@ -1,0 +1,16 @@
+includes:
+    - %currentWorkingDirectory%/.Build/vendor/netresearch/typo3-ci-workflows/config/phpstan/phpstan.neon
+    - %currentWorkingDirectory%/Build/phpstan-baseline.neon
+
+parameters:
+    level: max
+    phpVersion: 80200
+
+    paths:
+        - %currentWorkingDirectory%/Classes/
+        - %currentWorkingDirectory%/Configuration/
+
+    excludePaths:
+        - %currentWorkingDirectory%/ext_localconf.php
+
+    reportUnmatchedIgnoredErrors: false

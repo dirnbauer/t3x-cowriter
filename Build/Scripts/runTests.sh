@@ -191,7 +191,7 @@ run_mutation_tests() {
 run_phpstan() {
     info "Running PHPStan static analysis..."
     check_dependencies
-    "${VENDOR_BIN}/phpstan" analyse -c "${ROOT_DIR}/Build/phpstan.neon"
+    "${VENDOR_BIN}/phpstan" analyse -c "${ROOT_DIR}/Build/phpstan/phpstan.neon"
     success "PHPStan analysis completed"
 }
 

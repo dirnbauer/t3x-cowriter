@@ -19,5 +19,95 @@
         <target state="final">Cowriter-Einrichtungsstatus</target>
       </segment>
     </unit>
+    <unit id="status.title">
+      <segment>
+        <source>Cowriter Setup Status</source>
+        <target state="final">Cowriter-Einrichtungsstatus</target>
+      </segment>
+    </unit>
+    <unit id="status.description">
+      <segment>
+        <source>This page checks whether the LLM configuration required by the Cowriter extension is complete.</source>
+        <target state="final">Diese Seite prüft, ob die LLM-Konfiguration für die Cowriter-Extension vollständig ist.</target>
+      </segment>
+    </unit>
+    <unit id="status.ready.title">
+      <segment>
+        <source>Everything is configured correctly</source>
+        <target state="final">Alles ist korrekt konfiguriert</target>
+      </segment>
+    </unit>
+    <unit id="status.ready.description">
+      <segment>
+        <source>All required LLM components are set up. The Cowriter is ready to use.</source>
+        <target state="final">Alle erforderlichen LLM-Komponenten sind eingerichtet. Der Cowriter ist einsatzbereit.</target>
+      </segment>
+    </unit>
+    <unit id="status.incomplete.title">
+      <segment>
+        <source>Configuration incomplete</source>
+        <target state="final">Konfiguration unvollständig</target>
+      </segment>
+    </unit>
+    <unit id="status.incomplete.description">
+      <segment>
+        <source>One or more required configuration steps are missing. See the details below.</source>
+        <target state="final">Ein oder mehrere erforderliche Konfigurationsschritte fehlen. Details stehen unten.</target>
+      </segment>
+    </unit>
+    <unit id="status.table.check">
+      <segment>
+        <source>Check</source>
+        <target state="final">Prüfung</target>
+      </segment>
+    </unit>
+    <unit id="status.table.status">
+      <segment>
+        <source>Status</source>
+        <target state="final">Status</target>
+      </segment>
+    </unit>
+    <unit id="status.badge.ready">
+      <segment>
+        <source>Ready</source>
+        <target state="final">Bereit</target>
+      </segment>
+    </unit>
+    <unit id="status.badge.needsSetup">
+      <segment>
+        <source>Needs setup</source>
+        <target state="final">Einrichtung nötig</target>
+      </segment>
+    </unit>
+    <unit id="status.action.fix">
+      <segment>
+        <source>Fix</source>
+        <target state="final">Beheben</target>
+      </segment>
+    </unit>
+    <unit id="status.footer.hint">
+      <segment>
+        <source>The Cowriter extension requires a working LLM configuration from the NR LLM extension. Use the Fix buttons to resolve any issues.</source>
+        <target state="final">Die Cowriter-Extension benötigt eine funktionierende LLM-Konfiguration aus der NR-LLM-Extension. Verwenden Sie die Beheben-Schaltflächen, um Probleme zu lösen.</target>
+      </segment>
+    </unit>
+    <unit id="attribution.region">
+      <segment>
+        <source>Extension attribution</source>
+        <target state="final">Extension-Hinweis</target>
+      </segment>
+    </unit>
+    <unit id="attribution.logo">
+      <segment>
+        <source>NetResearch</source>
+        <target state="final">NetResearch</target>
+      </segment>
+    </unit>
+    <unit id="attribution.text">
+      <segment>
+        <source>Thank you from Kurt Dirnbauer. © NetResearch DTT GmbH</source>
+        <target state="final">Danke von Kurt Dirnbauer. © NetResearch DTT GmbH</target>
+      </segment>
+    </unit>
   </file>
 </xliff>
